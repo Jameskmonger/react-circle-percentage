@@ -14,5 +14,8 @@
     "react-component"
   ],
   "author": "James Monger",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.4.2"
+  }
 }
