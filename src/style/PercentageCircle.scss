@@ -1,0 +1,33 @@
+/****************************************************************
+ *
+ * CSS Percentage Circle
+ * Author: Andre Firchow
+ *
+*****************************************************************/
+
+@mixin circleInteriorSize($width) {
+  &:after {
+    top: $width;
+    left: $width;
+    width: 1 - (2 * $width);
+    height: 1 - (2 * $width);
+  }
+}
+
+@mixin circleBarSize($width) {
+  border-width: $width;
+  width: 1 - (2 * $width);
+  height: 1 - (2 * $width);
+}
+
+@mixin colorOverride($color) {
+  .above50, .below50 { border-color: $color;}
+
+  &:hover {
+    > span { color: $color;}
+  }
+}
+
+@import "PercentageCircleColor";
+@import "PercentageCircleStructure";
+@import "PercentageCircleHover";
