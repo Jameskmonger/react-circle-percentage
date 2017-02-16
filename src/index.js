@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './style/PercentageCircle.scss';
+import './style/style.scss';
 
 class PercentageCircle extends Component {
   getClassName() {
