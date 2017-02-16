@@ -1,5 +1,5 @@
 {
-  "name": "react-percentage-circle",
+  "name": "react-circle-percentage",
   "version": "1.0.0",
   "description": "A circle to display a percentage.",
   "main": "build/index.js",
