@@ -2,10 +2,14 @@
   "name": "react-percentage-circle",
   "version": "1.0.0",
   "description": "A circle to display a percentage.",
-  "main": "index.js",
+  "main": "build/index.js",
+  "files": [
+    "build"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bundle": "webpack"
+    "build": "node ./scripts/build.js",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "react",
@@ -18,13 +22,10 @@
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.22.1",
-    "babel-loader": "^6.2.10",
+    "babel-preset-latest": "^6.22.0",
     "babel-preset-react": "^6.22.0",
-    "css-loader": "^0.26.1",
-    "node-sass": "^4.5.0",
-    "sass-loader": "^5.0.1",
-    "style-loader": "^0.13.1",
-    "webpack": "^2.2.1"
+    "mkdirp": "^0.5.1",
+    "node-sass": "^4.5.0"
   },
   "peerDependencies": {
     "react": "15.x.x"
