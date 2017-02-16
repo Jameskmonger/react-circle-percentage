@@ -8,7 +8,7 @@ function onError (error) {
   console.log(error);
 }
 
-var buildPath = path.resolve(__dirname, '../build/');
+var buildPath = path.resolve(__dirname, '../../build/');
 
 // create the build folder
 mkdir(buildPath, (mkdirError, folderCreated) => {

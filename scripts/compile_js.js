@@ -2,19 +2,11 @@ var babel = require('babel-core');
 var fs = require('fs');
 var path = require('path');
 
-var inputPath = path.resolve(__dirname, '../src/index.js');
-var outputPath = path.resolve(__dirname, '../build/index.js');
-
-// make the final JS changes
-var finaliseJs = (js) => {
-  return js.replace("./style/style.scss", "./style.css");
-}
+var inputPath = path.resolve(__dirname, '../../src/index.js');
+var outputPath = path.resolve(__dirname, '../../build/index.js');
 
 var writeJs = (js, callback) => {
-  // make any final changes we need
-  var finalisedJS = finaliseJs(js);
-
-  fs.writeFile(outputPath, finalisedJS, (err) => {
+  fs.writeFile(outputPath, js, (err) => {
     if (err) {
       callback(err);
       return;

@@ -2,8 +2,8 @@ var sass = require('node-sass');
 var fs = require('fs');
 var path = require('path');
 
-var inputPath = path.resolve(__dirname, '../src/style/style.scss');
-var outputPath = path.resolve(__dirname, '../build/style.css');
+var inputPath = path.resolve(__dirname, '../../src/style/style.scss');
+var outputPath = path.resolve(__dirname, '../../build/style.css');
 
 var writeCss = (css, callback) => {
   // write to the output as a js file
