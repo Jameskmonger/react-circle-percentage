@@ -12,7 +12,7 @@ SHA=`git rev-parse --verify HEAD`
 # clone the whole repo into 'out' and put that repo on the target branch
 git clone $REPO out
 cd out
-git checkout $TARGET_BRANCH
+git checkout $OUTPUT_BRANCH
 cd ..
 
 # delete all compiled
