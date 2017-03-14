@@ -1,42 +1,23 @@
 {
-  "name": "react-circle-percentage",
-  "version": "1.1.0",
-  "description": "A circle to display a percentage.",
-  "main": "build/index.js",
-  "files": [
-    "build"
-  ],
+  "name": "react-circle-percentage-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "tsc -p src && alsatian src/test.js",
-    "build": "tsc -p src && mkdirp build && cpy \"./src/index.js\" build && node-sass src/style/style.scss build/style.css --output-style compressed",
-    "prepublish": "npm run test && npm run build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "react",
-    "percentage",
-    "circle",
-    "component",
-    "react-component"
-  ],
-  "author": "James Monger",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jameskmonger/react-circle-percentage.git"
+  },
+  "author": "James Monger <jameskmonger@hotmail.co.uk> (http://jamesmonger.com)",
   "license": "MIT",
-  "devDependencies": {
-    "@types/enzyme": "^2.7.4",
-    "alsatian": "^1.2.0",
-    "babel-core": "^6.22.1",
-    "babel-plugin-transform-decorators-legacy": "^1.3.4",
-    "babel-preset-latest": "^6.22.0",
-    "babel-preset-react": "^6.22.0",
-    "cpy-cli": "^1.0.1",
-    "enzyme": "^2.7.1",
-    "mkdirp": "^0.5.1",
-    "node-sass": "^4.5.0",
-    "react": "^15.4.2",
-    "react-addons-test-utils": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "typescript": "^2.1.6"
+  "bugs": {
+    "url": "https://github.com/Jameskmonger/react-circle-percentage/issues"
   },
-  "peerDependencies": {
-    "react": "15.x.x"
+  "homepage": "https://github.com/Jameskmonger/react-circle-percentage#readme",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
   }
 }
