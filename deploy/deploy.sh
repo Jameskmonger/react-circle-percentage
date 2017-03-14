@@ -19,7 +19,8 @@ cd ..
 rm -rf out/**/*
 
 # run custom build scripts
-./build.sh
+cd deploy
+bash build.sh
 
 # commit our changes
 cd out
@@ -27,4 +28,8 @@ git add .
 git commit -m "Compiling and committing (${SHA})"
 
 # Now that we're all set up, we can push.
-# git push $SSH_REPO $TARGET_BRANCH
+git push $SSH_REPO $TARGET_BRANCH
+
+# delete the 'out' dir
+cd ..
+rm -rf out
