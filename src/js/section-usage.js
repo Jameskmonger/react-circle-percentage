@@ -1,9 +1,10 @@
 import React from 'react';
+import BaseSection from './section-base';
 
 import Section from './components/section';
 import Snippet from './components/snippet';
 
-export default class UsageSection extends React.Component {
+export default class UsageSection extends BaseSection {
   render() {
     return <Section>
       <h2>Usage</h2>
