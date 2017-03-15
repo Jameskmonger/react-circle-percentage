@@ -6,17 +6,16 @@ Built from [CSS Percentage Circle by Andre Firchow](http://circle.firchow.net/),
 
 ## Installation
 
-    $ npm install react-percentage-circle --save
+    $ npm install react-circle-percentage --save
 
 ## Usage
 
-    import PercentageCircle from "react-percentage-circle";
+    import React from "react";
+    import PercentageCircle from "react-circle-percentage";
 
-    class SomeComponent extends Component {
+    class SomeComponent extends React.Component {
       render() {
-        return (
-          <PercentageCircle percentage="50"/>
-        );
+        return <PercentageCircle percentage="50"/>;
       }
     }
 
