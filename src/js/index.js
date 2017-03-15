@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import IntroSection from './section-intro';
 import InstallationSection from './section-installation';
 import UsageSection from './section-usage';
 import ExamplesSection from './section-examples';
@@ -9,6 +10,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      introShouldShow: false,
       installationShouldShow: false,
       usageShouldShow: false,
       examplesShouldShow: false
@@ -19,9 +21,15 @@ class App extends React.Component {
     // when all mounted, wait 0.5s and show the installation section
     setTimeout(() => {
       this.setState({
-        installationShouldShow: true
+        introShouldShow: true
       });
     }, 500);
+  }
+
+  introShown() {
+    this.setState({
+      installationShouldShow: true
+    });
   }
 
   installationShown() {
@@ -39,6 +47,10 @@ class App extends React.Component {
   render() {
     return <div>
       <h1>React Circle Percentage</h1>
+
+      <IntroSection
+        show={ this.state.introShouldShow }
+        onShow={ this.introShown.bind(this) }/>
 
       <InstallationSection
         show={ this.state.installationShouldShow }
