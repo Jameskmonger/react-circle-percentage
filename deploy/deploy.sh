@@ -9,6 +9,9 @@ SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 # get the SHA of the current source commit
 SHA=`git rev-parse --verify HEAD`
 
+# delete the out dir
+rm -rf out
+
 # clone the whole repo into 'out' and put that repo on the target branch
 git clone $REPO out
 cd out
