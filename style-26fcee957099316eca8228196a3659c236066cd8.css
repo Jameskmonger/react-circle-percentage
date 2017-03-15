@@ -6,3 +6,12 @@
   font-size: 14px;
   display: inline-block;
 }
+
+section {
+    opacity: 0;
+    transition: opacity 0.75s ease-out;
+}
+
+section.show {
+    opacity: 1;
+}
