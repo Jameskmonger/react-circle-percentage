@@ -3,7 +3,7 @@ cd ..
 
 cp src/index.html out/index.html
 npm run webpack
-cp src/bundle.js out/bundle.js
+mv src/bundle.js out/bundle.js
 
 # go back to deploy directory
 cd deploy
