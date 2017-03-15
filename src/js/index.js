@@ -3,22 +3,26 @@ import ReactDOM from 'react-dom';
 import CirclePercentage from 'react-circle-percentage';
 
 import Snippet from './snippet';
+import Section from './section';
 
 class App extends React.Component {
   render() {
     return <div>
       <h1>React Circle Percentage</h1>
 
-      <h2>Installation</h2>
+      <Section>
+        <h2>Installation</h2>
 
-      <Snippet>
-        $ npm install react-circle-percentage --save
-      </Snippet>
+        <Snippet>
+          $ npm install react-circle-percentage --save
+        </Snippet>
+      </Section>
 
-      <h2>Usage</h2>
+      <Section>
+        <h2>Usage</h2>
 
-      <Snippet>
-      {
+        <Snippet>
+        {
 `import PercentageCircle from "react-percentage-circle";
 
 class SomeComponent extends Component {
@@ -26,13 +30,16 @@ class SomeComponent extends Component {
     return <PercentageCircle percentage="50"/>;
   }
 }`
-      }
-      </Snippet>
+        }
+        </Snippet>
+      </Section>
 
-      <h2>Examples</h2>
-      <CirclePercentage percentage="21"/>
-      <CirclePercentage percentage="57"/>
-      <CirclePercentage percentage="86"/>
+      <Section>
+        <h2>Examples</h2>
+        <CirclePercentage percentage="21"/>
+        <CirclePercentage percentage="57"/>
+        <CirclePercentage percentage="86"/>
+      </Section>
     </div>;
   }
 }
