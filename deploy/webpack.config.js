@@ -2,12 +2,13 @@ var path = require('path');
 var webpack = require('webpack');
 
 var sourceDir = path.resolve(__dirname, '../', 'src/');
+var outDir = path.resolve(__dirname, '../', 'out/');
 
 module.exports = {
   entry: path.resolve(sourceDir, 'js/', 'index.js'),
   output: {
-    path: sourceDir,
-    filename: 'bundle.js'
+    path: outDir,
+    filename: `bundle-${process.env.DEPLOY_SHA}.js`
   },
   module: {
     loaders: [

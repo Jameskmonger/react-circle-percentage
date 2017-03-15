@@ -24,17 +24,17 @@ rm -rf ___deploy_tmp
 
 # run custom build scripts and then go back up
 cd deploy
-bash build.sh
+SHA=$SHA bash build.sh
 cd ..
 
 # commit our changes
 cd out
-#git add .
-#git commit -m "Compiling and committing (${SHA})"
+git add .
+git commit -m "Compiling and committing (${SHA})"
 
 # Now that we're all set up, we can push.
-#git push $SSH_REPO $OUTPUT_BRANCH
+git push $SSH_REPO $OUTPUT_BRANCH
 
 # delete the 'out' dir
 cd ..
-#rm -rf out
+rm -rf out
