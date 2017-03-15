@@ -16,8 +16,7 @@ export default class IntroSection extends BaseSection {
 
       <p>
         Licensed under the <a href="https://raw.githubusercontent.com/Jameskmonger/react-circle-percentage/master/LICENSE">MIT License</a>,
-        hosted on <a href="https://github.com/Jameskmonger/react-circle-percentage">GitHub</a> and
-        <a href="https://www.npmjs.com/package/react-circle-percentage">npm</a>.
+        hosted on <a href="https://github.com/Jameskmonger/react-circle-percentage">GitHub</a> and <a href="https://www.npmjs.com/package/react-circle-percentage">npm</a>.
       </p>
     </Section>;
   }
