@@ -11,9 +11,10 @@ export default class UsageSection extends BaseSection {
 
       <Snippet>
       {
-`import PercentageCircle from "react-percentage-circle";
+`import React from "react";
+import PercentageCircle from "react-percentage-circle";
 
-class SomeComponent extends Component {
+class SomeComponent extends React.Component {
   render() {
     return <PercentageCircle percentage="50"/>;
   }
