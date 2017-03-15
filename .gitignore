@@ -1,2 +1,4 @@
 /node_modules/
 /out/
+/src/bundle.js
+/npm-debug.log
