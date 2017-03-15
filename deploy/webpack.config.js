@@ -4,7 +4,7 @@ var webpack = require('webpack');
 var sourceDir = path.resolve(__dirname, '../', 'src/');
 
 module.exports = {
-  entry: path.resolve(sourceDir, 'index.js'),
+  entry: path.resolve(sourceDir, 'js/', 'index.js'),
   output: {
     path: sourceDir,
     filename: 'bundle.js'
