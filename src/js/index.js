@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import CirclePercentage from 'react-circle-percentage';
 
 import Snippet from './snippet';
 
@@ -29,6 +30,9 @@ class SomeComponent extends Component {
       </Snippet>
 
       <h2>Examples</h2>
+      <CirclePercentage percentage="21"/>
+      <CirclePercentage percentage="57"/>
+      <CirclePercentage percentage="86"/>
     </div>;
   }
 }
