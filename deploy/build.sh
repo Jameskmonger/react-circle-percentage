@@ -9,7 +9,7 @@ sed -i 's/###SHA###/'"$SHA"'/g' out/index.html
 DEPLOY_SHA=$SHA npm run webpack
 
 # copy the css
-cp src/css/style.css out/style.css
+cp src/css/style.css out/style-$SHA.css
 
 # go back to deploy directory
 cd deploy
