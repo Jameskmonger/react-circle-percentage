@@ -6,6 +6,7 @@ import Snippet from './components/snippet';
 import Section from './components/section';
 
 import InstallationSection from './section-installation';
+import UsageSection from './section-usage';
 
 class App extends React.Component {
   render() {
@@ -14,21 +15,7 @@ class App extends React.Component {
 
       <InstallationSection />
 
-      <Section>
-        <h2>Usage</h2>
-
-        <Snippet>
-        {
-`import PercentageCircle from "react-percentage-circle";
-
-class SomeComponent extends Component {
-  render() {
-    return <PercentageCircle percentage="50"/>;
-  }
-}`
-        }
-        </Snippet>
-      </Section>
+      <UsageSection />
 
       <Section>
         <h2>Examples</h2>
