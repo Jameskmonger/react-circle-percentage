@@ -5,18 +5,14 @@ import CirclePercentage from 'react-circle-percentage';
 import Snippet from './components/snippet';
 import Section from './components/section';
 
+import InstallationSection from './section-installation';
+
 class App extends React.Component {
   render() {
     return <div>
       <h1>React Circle Percentage</h1>
 
-      <Section>
-        <h2>Installation</h2>
-
-        <Snippet>
-          $ npm install react-circle-percentage --save
-        </Snippet>
-      </Section>
+      <InstallationSection />
 
       <Section>
         <h2>Usage</h2>
