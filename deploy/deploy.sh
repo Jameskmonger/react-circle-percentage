@@ -27,14 +27,17 @@ cd deploy
 SHA=$SHA bash build.sh
 cd ..
 
-# commit our changes
-cd out
-git add .
-git commit -m "Compiling and committing (${SHA})"
+# if we're not in debug mode then commit etc
+if [ -z "$DEBUG" ]; then
+  # commit our changes
+  cd out
+  git add .
+  git commit -m "Compiling and committing (${SHA})"
 
-# Now that we're all set up, we can push.
-git push $SSH_REPO $OUTPUT_BRANCH
+  # Now that we're all set up, we can push.
+  git push $SSH_REPO $OUTPUT_BRANCH
 
-# delete the 'out' dir
-cd ..
-rm -rf out
+  # delete the 'out' dir
+  cd ..
+  rm -rf out
+fi
