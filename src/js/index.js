@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import CirclePercentage from 'react-circle-percentage';
 
-import Snippet from './snippet';
-import Section from './section';
+import Snippet from './components/snippet';
+import Section from './components/section';
 
 class App extends React.Component {
   render() {
