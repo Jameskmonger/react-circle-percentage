@@ -8,7 +8,7 @@ import Snippet from './components/snippet';
 
 export default class ExamplesSection extends BaseSection {
   render() {
-    return <Section>
+    return <Section show={ this.props.show }>
       <h2>Examples</h2>
       <CirclePercentage percentage="21"/>
       <CirclePercentage percentage="57"/>

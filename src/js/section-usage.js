@@ -6,7 +6,7 @@ import Snippet from './components/snippet';
 
 export default class UsageSection extends BaseSection {
   render() {
-    return <Section>
+    return <Section show={ this.props.show }>
       <h2>Usage</h2>
 
       <Snippet>

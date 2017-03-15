@@ -8,12 +8,10 @@
 }
 
 section {
-    display: none;
     opacity: 0;
+    transition: opacity 0.75s ease-out;
 }
 
 section.show {
-    display: block;
-    transition: opacity 0.5s ease-out;
     opacity: 1;
 }
