@@ -1,0 +1,8 @@
+.snippet {
+  white-space: pre;
+  padding: 10px 20px;
+  background: #ccc;
+  font-family: monospace;
+  font-size: 14px;
+  display: inline-block;
+}
