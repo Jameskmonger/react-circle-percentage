@@ -15,3 +15,13 @@ section {
 section.show {
     opacity: 1;
 }
+
+@media (max-width: 600px) {
+  .snippet {
+    word-wrap: break-word;
+    width: 100%;
+    display: inline-block;
+    white-space: pre-wrap;
+    box-sizing: border-box;
+  }
+}
